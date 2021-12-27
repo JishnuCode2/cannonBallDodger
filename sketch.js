@@ -86,7 +86,7 @@ function draw() {
     for(var i = 0; i<700; i=i+70){
         drawLines(800,20,i+100,10);
     }
-    if(life <= 0 || score>=2){
+    if(life <= 0 || score>=20){
        backGroundMusic.stop()
        textSize(25);
        
@@ -95,7 +95,7 @@ function draw() {
       player.x = -1000
        text ("Thanks for Playing",300,300);
        text("Press enter to play again",300,350);
-      if(score >=2) {
+      if(score >=20) {
         text("You Won!",300,250)
         if(!laughSound && !endSound.isPlaying()){  
           scoreSound.play(); 
